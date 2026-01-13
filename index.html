@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashtami R S | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY");
+})();
+</script>
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<nav class="navbar">
+  <div class="logo">Ashtami</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-card">
+    <img src="images/profile.jpeg" class="profile-pic">
+    <h1>Ashtami R S</h1>
+    <h2>Aspiring Software Developer | AI Enthusiast</h2>
+    <p>Designing intelligent systems with clean code and powerful UI.</p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="ashtami_resume.pdf" download class="btn outline">Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section hidden" id="about">
+  <h3>About Me</h3>
+  <p>I am an Artificial Intelligence and Data Science undergraduate with a strong interest in software development and intelligent systems. I enjoy building applications that combine solid engineering principles with modern user interfaces and data-driven intelligence.</p>
+  <p>My academic journey has helped me develop a deep understanding of Python, Java, machine learning algorithms, and real-world problem solving. I believe in writing clean, efficient code and continuously improving both my technical and design skills.</p>
+  <p>I am actively seeking opportunities where I can contribute to impactful projects, learn from experienced engineers, and grow into a well-rounded software developer. </p>
+
+  <div class="cgpa-glass">
+    <span>CGPA</span>
+    <h4>9.13 / 10</h4>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section hidden" id="skills">
+  <h3>Skills</h3>
+  <div class="skills-grid">
+    <span>Python</span><span>Java</span><span>C++</span>
+    <span>Machine Learning</span><span>TensorFlow</span>
+    <span>Scikit-learn</span><span>Streamlit</span>
+    <span>HTML & CSS</span><span>GitHub</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section hidden" id="projects">
+  <h3>Projects</h3>
+
+  <div class="glass-card">
+    <h4>VisualGuard – DeepFake Detection</h4>
+    <p>Hybrid CNN + Transformer with Grad-CAM & real-time UI.</p>
+  </div>
+
+  <div class="glass-card">
+    <h4>AI-based Weather Forecasting</h4>
+    <p>LSTM + Transformer for hyper-local predictions.</p>
+  </div>
+
+  <div class="glass-card">
+    <h4>Multi-Modal AI for Cancer Diagnosis</h4>
+    <p>CNN + BERT + XGBoost ensemble with explainability.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section hidden" id="experience">
+  <h3>Experience</h3>
+  <div class="glass-card">
+    <h4>Machine Learning Intern – NSIC</h4>
+    <p>Worked on real-world ML pipelines using Python & Scikit-learn.</p>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section hidden" id="certifications">
+  <h3>Certifications</h3>
+  <ul class="cert-list">
+    <li>NPTEL – Joy of Computing (IIT Madras)</li>
+    <li>NPTEL – Software Testing (IIT Kharagpur)</li>
+    <li>HackerRank – Python</li>
+    <li>Diploma in Python Programming</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section hidden" id="contact">
+  <div class="contact-wrapper">
+
+    <div class="contact-info glass-card">
+      <h4>Email</h4>
+      <p>ashtamirsofficial@gmail.com</p>
+
+      <h4>LinkedIn</h4>
+      <p>linkedin.com/in/ashtami-r-s</p>
+
+      <h4>GitHub</h4>
+      <p>github.com/ashtamiii</p>
+    </div>
+
+    <form class="contact-form glass-card" id="contact-form">
+      <h3>Let’s Connect</h3>
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send Message ✨</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Ashtami R S
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
